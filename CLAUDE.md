@@ -1,0 +1,1 @@
+- Always remember to commit code changes to this repo only:  https://github.com/Chrissy265/sharePoint_stirlo.git
