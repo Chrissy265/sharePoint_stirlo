@@ -14,6 +14,16 @@ const itemsRoutes = require('./routes/items.routes');
 
 const app = express();
 
+// Start server
+const PORT = process.env.PORT || 10000;
+const server = app.listen(PORT, '0.0.0.0', () => {
+  logger.info(`SharePoint API Service running on port ${PORT}`);
+  logger.info(`Environment: ${config.server.env}`);
+  logger.info(`SharePoint Site: ${config.sharepoint.siteUrl}`);
+});
+
+
+
 // Security middleware
 app.use(helmet());
 app.use(cors());
@@ -92,13 +102,7 @@ app.use((req, res) => {
 // Error handling middleware
 app.use(errorHandler);
 
-// Start server
-const PORT = config.server.port;
-app.listen(PORT, () => {
-  logger.info(`SharePoint API Service running on port ${PORT}`);
-  logger.info(`Environment: ${config.server.env}`);
-  logger.info(`SharePoint Site: ${config.sharepoint.siteUrl}`);
-});
+
 
 // Graceful shutdown
 process.on('SIGTERM', () => {

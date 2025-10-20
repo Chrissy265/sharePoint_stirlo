@@ -7,7 +7,9 @@
       "Bash(git config user.name \"Chrissy265\")",
       "Bash(git remote add origin https://github.com/Chrissy265/sharePoint_stirlo.git)",
       "Bash(git push -u origin main)",
-      "Bash(git commit -m \"$(cat <<''EOF''\nUpdate package.json and Claude settings\n\n- Update Node engine version to 18.x\n- Remove test script and dev dependencies\n- Update Claude Code permissions for git operations\n\n🤖 Generated with [Claude Code](https://claude.com/claude-code)\n\nCo-Authored-By: Claude <noreply@anthropic.com>\nEOF\n)\")"
+      "Bash(git commit -m \"$(cat <<''EOF''\nUpdate package.json and Claude settings\n\n- Update Node engine version to 18.x\n- Remove test script and dev dependencies\n- Update Claude Code permissions for git operations\n\n🤖 Generated with [Claude Code](https://claude.com/claude-code)\n\nCo-Authored-By: Claude <noreply@anthropic.com>\nEOF\n)\")",
+      "Bash(git push origin main)",
+      "Bash(git commit -m \"$(cat <<''EOF''\nConfigure for Render deployment\n\n🤖 Generated with [Claude Code](https://claude.com/claude-code)\n\nCo-Authored-By: Claude <noreply@anthropic.com>\nEOF\n)\")"
     ],
     "deny": [],
     "ask": []

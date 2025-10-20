@@ -1,11 +1,12 @@
 require('dotenv').config();
 
 module.exports = {
-  server: {
-    port: process.env.PORT || 3000,
-    env: process.env.NODE_ENV || 'development',
-    apiKey: process.env.API_KEY
-  },
+ 
+        server: {
+          port: process.env.PORT || 10000, // Changed from 3000
+          env: process.env.NODE_ENV || 'development',
+          apiKey: process.env.API_KEY
+        },
   sharepoint: {
     tenantId: process.env.SHAREPOINT_TENANT_ID,
     clientId: process.env.SHAREPOINT_CLIENT_ID,
