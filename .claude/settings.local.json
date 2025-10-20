@@ -9,7 +9,8 @@
       "Bash(git push -u origin main)",
       "Bash(git commit -m \"$(cat <<''EOF''\nUpdate package.json and Claude settings\n\n- Update Node engine version to 18.x\n- Remove test script and dev dependencies\n- Update Claude Code permissions for git operations\n\n🤖 Generated with [Claude Code](https://claude.com/claude-code)\n\nCo-Authored-By: Claude <noreply@anthropic.com>\nEOF\n)\")",
       "Bash(git push origin main)",
-      "Bash(git commit -m \"$(cat <<''EOF''\nConfigure for Render deployment\n\n🤖 Generated with [Claude Code](https://claude.com/claude-code)\n\nCo-Authored-By: Claude <noreply@anthropic.com>\nEOF\n)\")"
+      "Bash(git commit -m \"$(cat <<''EOF''\nConfigure for Render deployment\n\n🤖 Generated with [Claude Code](https://claude.com/claude-code)\n\nCo-Authored-By: Claude <noreply@anthropic.com>\nEOF\n)\")",
+      "Bash(git commit -m \"$(cat <<''EOF''\nThe SharePoint service handles smart search method that uses natural language understanding to route queries to the appropriate search method\n\n🤖 Generated with [Claude Code](https://claude.com/claude-code)\n\nCo-Authored-By: Claude <noreply@anthropic.com>\nEOF\n)\")"
     ],
     "deny": [],
     "ask": []
