@@ -1,7 +1,13 @@
 {
   "permissions": {
     "allow": [
-      "Bash(git add .)"
+      "Bash(git add .)",
+      "Bash(git commit -m \"$(cat <<''EOF''\nInitial commit: SharePoint API integration service\n\nAdd Node.js Express server with SharePoint API integration including authentication, list management, and item operations. Includes security features like API key authentication, rate limiting, and environment-based configuration.\n\n🤖 Generated with [Claude Code](https://claude.com/claude-code)\n\nCo-Authored-By: Claude <noreply@anthropic.com>\nEOF\n)\")",
+      "Bash(git config user.email \"cbeckford70@gmail.com\")",
+      "Bash(git config user.name \"Chrissy265\")",
+      "Bash(git remote add origin https://github.com/Chrissy265/sharePoint_stirlo.git)",
+      "Bash(git push -u origin main)",
+      "Bash(git commit -m \"$(cat <<''EOF''\nUpdate package.json and Claude settings\n\n- Update Node engine version to 18.x\n- Remove test script and dev dependencies\n- Update Claude Code permissions for git operations\n\n🤖 Generated with [Claude Code](https://claude.com/claude-code)\n\nCo-Authored-By: Claude <noreply@anthropic.com>\nEOF\n)\")"
     ],
     "deny": [],
     "ask": []
