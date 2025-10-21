@@ -278,11 +278,40 @@ class ItemsController {
         });
       }
 
-      const data = await sharepointService.search(query, req.query);
-      
+      const data = await sharepointService.searchMultiCriteria(criteria, library);
+
       res.json({
         success: true,
-        data: data.d.query.PrimaryQueryResult.RelevantResults.Table.Rows.results
+        criteria: criteria,
+        data: data.d?.results || data,
+        count: data.d?.results?.length || 0
+      });
+    } catch (error) {
+      next(error);
+    }
+  }
+
+  /**
+   * General search items (keyword search)
+   */
+  async searchItems(req, res, next) {
+    try {
+      const { keyword, library = 'Documents' } = req.query;
+
+      if (!keyword) {
+        return res.status(400).json({
+          success: false,
+          error: 'Keyword parameter is required'
+        });
+      }
+
+      const data = await sharepointService.searchByKeyword(keyword, library);
+
+      res.json({
+        success: true,
+        keyword: keyword,
+        data: data.d?.results || data,
+        count: data.d?.results?.length || 0
       });
     } catch (error) {
       next(error);
