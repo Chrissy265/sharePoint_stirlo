@@ -1,14 +1,7 @@
 {
   "permissions": {
     "allow": [
-      "Bash(git commit -m \"$(cat <<''EOF''\nFix deployment issues for Render platform\n\n- Fix route order: moved specific routes before parameterized routes\n- Fix HTTP method: changed /search/advanced from GET to POST\n- Add missing searchItems controller method for keyword search\n- Fix advancedSearch to use searchMultiCriteria service method\n- Remove undefined variable bug in advancedSearch\n\n🤖 Generated with [Claude Code](https://claude.com/claude-code)\n\nCo-Authored-By: Claude <noreply@anthropic.com>\nEOF\n)\")",
-      "Bash(node -c \"C:\\Users\\cbeck\\repo\\SharePoint_Access\\sharePoint_stirlo\\services\\sharepoint.service.js\")",
-      "Bash(git checkout cdddf67 -- services/sharepoint.service.js)",
-      "Bash(test -f \"C:\\Users\\cbeck\\repo\\SharePoint_Access\\sharePoint_stirlo\\config\\sharepoint.config.js\")",
-      "Bash(test -f \"C:\\Users\\cbeck\\repo\\SharePoint_Access\\sharePoint_stirlo\\utils\\logger.js\")",
-      "Bash(node -e \"const service = require(''./services/sharepoint.service.js''); console.log(''✓ Module loads successfully''); console.log(''✓ Methods:'', Object.getOwnPropertyNames(Object.getPrototypeOf(service)).filter(m => m !== ''constructor'').length);\")",
-      "Bash(node -e \"const service = require(''./services/sharepoint.service.js''); console.log(''Module loads successfully''); console.log(''Methods available:'', Object.getOwnPropertyNames(Object.getPrototypeOf(service)).length);\")",
-      "Bash(node -c \"C:\\Users\\cbeck\\repo\\SharePoint_Access\\sharePoint_stirlo\\config\\sharepoint.config.js\")"
+      "Bash(git commit -m \"$(cat <<''EOF''\nUpdate Claude Code settings\n\n🤖 Generated with [Claude Code](https://claude.com/claude-code)\n\nCo-Authored-By: Claude <noreply@anthropic.com>\nEOF\n)\")"
     ],
     "deny": [],
     "ask": []
